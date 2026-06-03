@@ -15,7 +15,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        ViewBag.Palabras=palabras;
+        PalabrasAhorcado PalabrasAhorcado=new PalabrasAhorcado();
+        ViewBag.palabra = PalabrasAhorcado.obtenerPalabra();
         return View();
     
     }

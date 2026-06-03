@@ -11,7 +11,10 @@ public class PalabrasAhorcado()
 
    public string obtenerPalabra()
    {
-      return 
+      Random random = new Random();
+      int numero = random;
+
+      
 
    }
 
