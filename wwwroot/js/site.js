@@ -70,7 +70,6 @@ let gano=false;
          document.getElementById("mensaje").innerHTML="Perdiste. La palabra era: " + palabra;
          return;
       }
-
-      document.getElementById(palabraOculta).innerHTML="";
+     
 
     }

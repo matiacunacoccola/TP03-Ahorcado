@@ -38,11 +38,16 @@ body{
 
 button{
     padding: 1%;
-    border:10% ;
+    border:10%;
+}
+button:hover{
+  box-shadow: 3px 3px 3px;
+
 }
 
 input{
     padding: 1%;
+
 }
 
 h1{
