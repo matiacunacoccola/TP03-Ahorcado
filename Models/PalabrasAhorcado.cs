@@ -2,25 +2,19 @@ public class PalabrasAhorcado
 {
    private List<string> palabras;
 
-   public PalabrasAhorcado(List<string> palabras)
+   public PalabrasAhorcado()
    {
      this.palabras = new List<string>
-     {"COMPUTADORA","PROGRAMACION","INFORMATICA","LABORATORIO","COMPAÑERO","ARQUITECTURA","SEGMENTACION","PAGINACION","PROCESADOR","TELEVISION"};
+     {"CUADERNO","MONTAÑAS","PANTALLA","TECLADOS","COMPAÑERO","COCINERO","ELEFANTE","HOSPITAL","JUGUETES","ZAPATERO"};
 
    }
 
    public string obtenerPalabra()
    {
-      Random random = new Random();
-      int numero = 0;
-       
-      numero=random.next(palabras.Count);
-    
-
--
-      return palabras(numero);
+      Random random = new Random(); 
+      int numero=random.Next(palabras.Count);
+      return palabras[numero];
 
    }
-
 
 }

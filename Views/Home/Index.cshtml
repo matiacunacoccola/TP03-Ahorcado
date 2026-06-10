@@ -6,3 +6,28 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+@{
+    ViewData["Title"] = "Ahorcado";
+}
+   
+    <h1>Bienvenido al juego del Ahorcado</h1>
+
+    <p>El juego consiste en adivinar la palabra letra por letra. Tendras un total de 10 intentos para adivinar la palabra, si no llegas a adivinar la palabra perderas el juego</p>
+
+    <div id="palabraOculta"></div>
+
+    <p>Intentos restantes:</p>
+    <div id="intentos">10</div>
+
+    <div id="mensaje"></div>
+
+     <p>Ingrese una letra:</p><br>
+     <input type="text" id="letra" placeholder="Ej: a"><br>
+   
+     <div>
+      <input type="hidden" id="palabra" value="@ViewBag.palabra">
+     </div>
+
+    <button onclick="arriesgarLetra()">
+     Arriesgar letra
+    </button>
